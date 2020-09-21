@@ -1,0 +1,8 @@
+de\jonashackt\springbootvuejs\repository\UserRepository.class
+de\jonashackt\springbootvuejs\service\DebitCreditService.class
+de\jonashackt\springbootvuejs\configuration\WebSecurityConfiguration.class
+de\jonashackt\springbootvuejs\exception\UserNotFoundException.class
+de\jonashackt\springbootvuejs\domain\User.class
+de\jonashackt\springbootvuejs\controller\BackendController.class
+de\jonashackt\springbootvuejs\SpringBootVuejsApplication.class
+de\jonashackt\springbootvuejs\service\DebitCreditService$HistoryItem.class

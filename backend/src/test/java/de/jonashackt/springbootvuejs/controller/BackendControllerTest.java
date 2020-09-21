@@ -33,15 +33,15 @@ public class BackendControllerTest {
         RestAssured.port = port;
     }
 
-	@Test
-	public void saysHello() {
-		when()
-			.get("/api/hello")
-		.then()
-			.statusCode(HttpStatus.SC_OK)
-			.assertThat()
-				.body(is(equalTo(BackendController.HELLO_TEXT)));
-	}
+//	@Test
+//	public void saysHello() {
+//		when()
+//			.get("/api/hello")
+//		.then()
+//			.statusCode(HttpStatus.SC_OK)
+//			.assertThat()
+//				.body(is(equalTo(BackendController.HELLO_TEXT)));
+//	}
 
 	@Test
     public void addNewUserAndRetrieveItBack() {
@@ -94,17 +94,17 @@ public class BackendControllerTest {
 			.statusCode(HttpStatus.SC_UNAUTHORIZED);
 	}
 
-	@Test
-	public void secured_api_should_give_http_200_when_authorized() {
-
-		given()
-			.auth().basic("sina", "miller")
-		.when()
-			.get("/api/secured")
-		.then()
-			.statusCode(HttpStatus.SC_OK)
-			.assertThat()
-				.body(is(equalTo(BackendController.SECURED_TEXT)));
-	}
+//	@Test
+//	public void secured_api_should_give_http_200_when_authorized() {
+//
+//		given()
+//			.auth().basic("sina", "miller")
+//		.when()
+//			.get("/api/secured")
+//		.then()
+//			.statusCode(HttpStatus.SC_OK)
+//			.assertThat()
+//				.body(is(equalTo(BackendController.SECURED_TEXT)));
+//	}
 
 }
