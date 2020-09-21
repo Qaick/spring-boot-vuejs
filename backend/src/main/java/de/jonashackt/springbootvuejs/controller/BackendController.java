@@ -22,7 +22,13 @@ public class BackendController {
     private UserRepository userRepository;
 
     @RequestMapping(path = "/hello")
-    public String sayHello() {
+    public String debit() {
+        LOG.info("GET called on /hello resource");
+        return HELLO_TEXT;
+    }
+
+    @RequestMapping(path = "/hello")
+    public String credit() {
         LOG.info("GET called on /hello resource");
         return HELLO_TEXT;
     }
