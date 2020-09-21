@@ -7,21 +7,14 @@ const AXIOS = axios.create({
 
 
 export default {
-    hello() {
-        return AXIOS.get(`/hello`);
+    credit(amount) {
+        return AXIOS.post(`/account/credit/` + amount);
     },
-    getUser(userId) {
-        return AXIOS.get(`/user/` + userId);
+    debit(amount) {
+        return AXIOS.post(`/account/debit/` + amount);
     },
-    createUser(firstName, lastName) {
-        return AXIOS.post(`/user/` + firstName + '/' + lastName);
-    },
-    getSecured(user, password) {
-        return AXIOS.get(`/secured/`,{
-            auth: {
-                username: user,
-                password: password
-            }});
+    getHistory() {
+        return AXIOS.get(`/account/history`);
     }
 }
 
